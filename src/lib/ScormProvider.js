@@ -21,7 +21,8 @@ export const ScoContext = React.createContext({
   setStatus: () => {},
   setScore: () => {},
   set: () => {},
-  get: () => {}
+  get: () => {},
+  close: () => {}
 });
 
 class ScormProvider extends Component {
@@ -221,7 +222,8 @@ class ScormProvider extends Component {
       setStatus: this.setStatus,
       setScore: this.setScore,
       set: this.set,
-      get: this.get
+      get: this.get,
+      close: this.closeScormAPIConnection
     }
 
     return (
